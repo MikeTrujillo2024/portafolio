@@ -1,0 +1,42 @@
+ .content__project-page {
+   /*  display: flex;
+    flex-direction: column; */
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.project-page__title {
+    margin: 0 auto;
+
+}
+
+.project-page__text{
+    border: 1px solid red;
+    width: 100%;
+    height: auto;
+
+}
+
+.project-page__subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.project-page__titleProject{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    color: #ccbcbc;
+    text-decoration:underline;
+    text-transform: capitalize;
+}
+
+.project-page__description{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+    font-size: 1em;
+}
+
+
