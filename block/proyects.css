@@ -1,42 +1,65 @@
  .content__project-page {
-   /*  display: flex;
-    flex-direction: column; */
-    margin-top: 50px;
-    flex-wrap: wrap;
-}
+     display: flex;
+     flex-direction: column;
+ }
 
-.project-page__title {
-    margin: 0 auto;
+ .project-page__title {
+     text-align: center;
 
-}
+ }
 
-.project-page__text{
-    border: 1px solid red;
-    width: 100%;
-    height: auto;
+ .project-page__titles {
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     flex-wrap: wrap;
+ }
 
-}
 
-.project-page__subtitle{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 25px;
+ .page__title-cards {
+     width: 30%;
+     height: 250px;
+     margin-top: 20px;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .title__cards-image {
+     width: 100%;
+     height: 200px;
+     object-fit:fill;
+ }
+
+ .page__title-project {
+    flex: 1;
+    display: flex;
     text-align: center;
+    background-color:#5c5b5b;
+    
+ }
+
+ .title__project-text{
+    flex: 1;
+    margin: 0 auto;
+    color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    transition: all .8s ease-in-out;
+}
+
+.title__project-text:hover{
+    font-size: 0;
+}
+
+.title__project-text:hover::after{
+    content: ' descripción ';
     text-transform: capitalize;
-}
-
-.project-page__titleProject{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 200;
-    color: #ccbcbc;
-    text-decoration:underline;
-    text-transform: capitalize;
-}
-
-.project-page__description{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: justify;
-    font-size: 1em;
-}
-
-
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    
+ }
+/*  .title__cards-image:hover {
+    transform: scale(1.3,1.3);
+ } */
