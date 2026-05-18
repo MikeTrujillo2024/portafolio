@@ -18,12 +18,21 @@ function showModal(index){
  let  descriptionAchiviement = clone.querySelector("#content__description-achievements");
  let  descriptionsumary = clone.querySelector("#content__description-summary");
  let  modaLink= clone.querySelector(".button__visit");
+ const ul = clone.querySelector("#content-description-characteristics");
  
  title.textContent = datos.title;
  descriptionTitle.textContent = datos.description[0];
- descriptionCaracteristic.textContent = datos.description[1];
- descriptionAchiviement.textContent = datos.description[2];
- descriptionsumary.textContent = datos.description[3];
+ descriptionAchiviement.textContent = datos.description[1];
+ descriptionsumary.textContent = datos.description[2];
+/*  descriptionCaracteristic.textContent = datos.description[1]; */
+datos.caracter.forEach(caracteres=>{
+
+    const li = document.createElement("li")
+    li.textContent = caracteres;
+
+    ul.appendChild(li);
+})
+
  modaLink.href = datos.link;
  
  container.appendChild(clone);

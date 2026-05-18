@@ -1,9 +1,7 @@
 .popup__close{
     display: none;
 }
-.popup__show{
-    display: block;
-}
+
 .shadow__popup {
     position: fixed;
     width: 100%;
