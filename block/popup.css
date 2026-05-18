@@ -1,44 +1,121 @@
-.popup{
-    position: absolute;
-    background-color: #fff;
-    top: 10%;
+.popup__close{
+    display: none;
+}
+.popup__show{
+    display: block;
+}
+.shadow__popup {
+    position: fixed;
     width: 100%;
-    height: 600px;
-    color: black;
+    height: 100%;
+    top: 0%;
+    background-color: rgba(190, 190, 190, 0.9);
+    
+}
+
+.popup {
+    position: absolute;
+    width: 50%;
+    left: 26%;
+    margin-top: 2%;
+    height: auto;
+    color: rgb(0, 0, 0);
     border-radius: 30px;
 }
-.popup__hidden{
-    visibility: hidden;
+
+.popup::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(196, 231, 243) url('../images/background_header.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
 }
-.pupup__cancel{
+
+
+
+.pupup__cancel {
     position: relative;
     font-family: "Inter", sans-serif;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 4rem;
     width: 40px;
     height: 40px;
-    top: -40px;
+    top: -60px;
     right: -95%;
     border: none;
     background-color: transparent;
     color: #fff;
-    transform: rotate(80deg);
+    transform: rotate(45deg);
 }
 
-.pupup__content{
-    position: absolute;
-    top: 0;
+.pupup__cancel:hover {
+    color: black;
+    cursor: pointer
+}
+
+.pupup__content {
+    position: relative;
+    top: -60px;
     width: 98%;
     height: auto;
     margin: 0 0 0 10px;
+    z-index: 9;
+    line-height: 1.3;
 }
 
-.pupup__content-subtitle{
+.pupup__content-subtitle {
 
-text-transform: uppercase;
-text-align: center;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-.pupup__content-description{
- 
+.pupup__content-titleProject {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.pupup__content-description {
+
+    font-size: 1rem;
+}
+
+.popup_link {
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    top: -30px;
+}
+
+.link__button-visit {
+    width: 20%;
+    height: 100%;
+    border: 1px solid blue;
+    background: transparent;
+}
+
+.button__visit {
+    position: relative;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 12% 30%;
+    left: -9px;
+}
+
+.button__visit:hover {
+    color: white;
+    background-color: #4926c9;
+    border: black 1px solid;
+    text-transform: uppercase;
 }
